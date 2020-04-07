@@ -10,14 +10,14 @@ h1, h2, h3, h4, h5, h6 { /* Are all necessary? Should they be multi-line? */
 }
 
 header.main-head {
-    position: relative;
-    background-color: #343a40;
-    background: linear-gradient(rgba63, 136, 197, .75), transparent 90%,
-                linear-gradient(0deg #fff, transparent),
-                rgba(63, 136, 197, 1) url("../img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
-    background-size: cover;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  position: relative;
+  background-color: #343a40;
+  background: linear-gradient(rgba(63, 136, 197, .75), transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              rgba(63, 136, 197, 1) url("img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .main-text {
@@ -38,3 +38,82 @@ header.main-head h1 {
       font-size: 3rem;
     }
 }
+
+.showcase .showcase-text {
+    padding: 3rem;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }
+  
+  .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+  }
+  
+  .testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .testimonials .testimonial-item {
+    max-width: 18rem;
+  }
+  
+  .testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+
+  .arrow {
+    font-size: 3rem;
+    color: grey;
+  }
+
+  .my-shadow {
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  }
+  
+  .icons-grid {
+    background-color: #fff;
+  }
+  
+  nav {
+    background-color: #fff;
+  }
+  
+  .logo-padding {
+    padding-right: 2rem;
+  }
+  
+  #navbarText {
+    font-size: 1.5rem;
+  }
+  
+  .bigger-btn {
+    font-size: 2rem;
+  }
