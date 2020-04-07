@@ -114,8 +114,11 @@ header.main-head h1 {
     font-size: 1.5rem;
   }
   
-  .bigger-btn {
-    font-size: 2rem;
+
+  @media (min-width: 768px) {
+    .bigger-btn {
+        font-size: 2rem;
+      }
   }
 
 .img-fluid {
