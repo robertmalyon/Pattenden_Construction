@@ -142,3 +142,14 @@ header.main-head h1 {
      border-right: none;
    }
  }
+
+ .navbar-nav {
+     padding-left: 2rem;
+ }
+
+ @media (max-width: 768px) {
+     .navbar-nav {
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+  }
