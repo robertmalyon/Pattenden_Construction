@@ -53,6 +53,13 @@ header.main-head h1 {
       padding: 7rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .showcase .showcase-text {
+      width: 100%;
+      height: auto;
+    }
+  }
   
   .features-icons {
     padding-top: 7rem;
