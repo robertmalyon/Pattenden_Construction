@@ -128,3 +128,13 @@ header.main-head h1 {
     height: auto;
     max-width: 100%;
 }
+
+.navbar-nav .nav-item:not(:last-child) {
+    border-right: 1px solid silver;
+ }
+ 
+ @media (max-width: 768px) {
+   .navbar-nav .nav-item:not(:last-child) {
+     border-right: none;
+   }
+ }
