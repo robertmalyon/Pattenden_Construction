@@ -1,0 +1,40 @@
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Omitted Lato as leading font */
+}
+
+h1, h2, h3, h4, h5, h6 { /* Are all necessary? Should they be multi-line? */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Omitted Lato as leading font */
+    font-weight: 700;
+}
+
+header.main-head {
+    position: relative;
+    background-color: #343a40;
+    background: linear-gradient(rgba63, 136, 197, .75), transparent 90%,
+                linear-gradient(0deg #fff, transparent),
+                rgba(63, 136, 197, 1) url("../img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.main-text {
+    color: rgba(20, 15, 45, 1);
+  }
+
+header.main-head h1 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .1rem #fff ;
+}
+
+@media (min-width: 768px) {
+    header.main-head {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.main-head h1 {
+      font-size: 3rem;
+    }
+}
