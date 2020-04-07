@@ -117,3 +117,14 @@ header.main-head h1 {
   .bigger-btn {
     font-size: 2rem;
   }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.comp-logo {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
