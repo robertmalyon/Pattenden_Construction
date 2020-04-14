@@ -136,8 +136,8 @@ header.main-head h1 {
 
 .comp-logo {
     display: inline-block;
-    height: auto;
-    max-width: 100%;
+    height: 100px;
+    width: auto;
 }
 
 .navbar-nav .nav-item:not(:last-child) {
@@ -154,14 +154,6 @@ header.main-head h1 {
      padding-left: 2rem;
  }
 
-.mymove-div {
-  width: 1rem;
-  height: .25rem;
-  position: relative;
-  animation: mymove 2s ease infinite;
-
-}
-
  @media (max-width: 768px) {
      .navbar-nav {
         padding-left: 0;
@@ -169,7 +161,11 @@ header.main-head h1 {
     }
   }
 
-  @keyframes mymove {
-    0%   {top: 0;}
-    50% {top: 10px;}
-    100% {top: 0;}
+  .certified {
+    float: right;
+  }
+  
+  .certified img {
+    height: 50px;
+    width: auto;
+  }
