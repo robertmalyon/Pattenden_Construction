@@ -110,18 +110,20 @@ header.main-head h1 {
     background-color: #fff;
   }
   
+  /*
   nav {
     background-color: #fff;
   }
-  
+  */
   .logo-padding {
     padding-right: 2rem;
   }
   
+  /*
   #navbarText {
     font-size: 1.5rem;
   }
-  
+  */
 
   @media (min-width: 768px) {
     .bigger-btn {
@@ -139,6 +141,7 @@ header.main-head h1 {
     width: auto;
 }
 
+/*
 .navbar-nav .nav-item:not(:last-child) {
     border-right: 1px solid silver;
  }
@@ -159,7 +162,7 @@ header.main-head h1 {
         padding-bottom: 1rem;
     }
   }
-
+*/
   .certified {
     float: right;
   }
@@ -207,4 +210,69 @@ header.main-head h1 {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* Experimental Navbar */
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-family: "Roboto Condensed";
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: rgba(0,0,0,.85);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #adb5bd;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #adb5bd;
+}
+
+.logo-text-head {
+  font-family: "Roboto Condensed";
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  }
+
+.logo-text-body {
+  font-family: 'Roboto';
+  text-align: justify;
+  line-height: 2rem;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: rgba(0,0,0,.85);
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #adb5bd;
+  }
 }
