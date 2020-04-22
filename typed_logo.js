@@ -1,41 +1,41 @@
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
-
-const textArray = ["Pattenden Construction Services", "Tommy & Billy Pattenden", "Your project, our expertise"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
+//animate the cursor
+function cursorAnimation() {
+    $('#cursor').animate({
+      opacity: 1
+    }, 'fast', 'swing').animate({
+      opacity: 0
+    }, 'fast', 'swing');
   }
+  
+  
+  //define text
+  var text = 'Pattenden Construction Services';
+  var done = false;
+  var myInterval;
+  
+  //text is split up to letters
+  function startAnimation() {
+    while (!done) {
+     $(document).ready(function() {
+        myInterval = setInterval('cursorAnimation()', 1000); //setInterval to run the animation
+        });
+    $.each(text.split(''), function(i, letter) {
+    //we add 100*i ms delay to each letter 
+    setTimeout(function() {
+      //we add the letter to the container
+      $('#container').html($('#container').html() + letter);
+    }, 200 * i);
+  });
+  done = true;
+  
+}
+clearInterval(myInterval);
 }
 
-function erase() {
-    if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
+function endAnimation() {
+    clearInterval(myInterval);
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+document.addEventListener('scroll', function() {
+    startAnimation();
 });
