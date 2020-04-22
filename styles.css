@@ -136,10 +136,6 @@ header.main-head h1 {
     height: auto;
 }
 
-.comp-logo {
-    height: 100px;
-    width: auto;
-}
 
 /*
 .navbar-nav .nav-item:not(:last-child) {
@@ -238,6 +234,10 @@ header.main-head h1 {
   background: rgba(0,0,0,.85);
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
+.navbar.active .comp-logo {
+  height: 75px;
+  width: auto;
+}
 
 .navbar.active .nav-link {
   color: #adb5bd;
@@ -275,22 +275,4 @@ header.main-head h1 {
   .navbar .navbar-brand, .navbar .nav-link {
       color: #adb5bd;
   }
-}
-
-/* Experimental typed logo */
-
-body {
-  text-align: left;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-p{
-  color: #fafafa;
-}
-#container {
-  font-size: 1rem;
-}
-#cursor{
-  font-size: 34px;
-  display: inline;
-  opacity: 0;
 }
