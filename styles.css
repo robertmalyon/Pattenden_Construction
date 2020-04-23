@@ -270,6 +270,20 @@ header.main-head h1 {
 @media (max-width: 991.98px) {
   .navbar {
     background: rgba(0,0,0,.85);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .comp-logo {
+    height: 75px;
+    width: auto;
+  }
+
+  .navbar.active {
+    background: rgba(0,0,0,.85);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar.active .comp-logo {
+    height: 75px;
+    width: auto;
   }
 
   .navbar .navbar-brand, .navbar .nav-link {
