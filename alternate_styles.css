@@ -16,3 +16,15 @@
   .head-content {
       background-color: rgba(7, 56, 95, 0.8);
   }
+
+  @media only screen and (max-width: 500px) {
+    .comp-logo {
+      width: 75%;
+      height: auto;
+      margin-left: auto;
+    }
+
+    .nav-pad {
+        height: 60px;
+    }
+}
