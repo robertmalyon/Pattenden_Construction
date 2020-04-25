@@ -1,5 +1,6 @@
-.nav-pad {
-    height: 130px;
+.comp-logo-text {
+font-family: "Roboto Condensed";
+font-size: 1.25rem;;
 }
 
 .main-head {
@@ -32,6 +33,13 @@
     height: auto;
     min-width: 200px;
   }
+
+  .qual-img {
+    height: 65px;
+    width: auto;
+    margin-right: 1rem;
+  }
+  
 
   @media only screen and (max-width: 500px) {
     .comp-logo {

@@ -9,16 +9,17 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="alternate_styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed|Roboto">
 
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
   <!-- navbar -->
-  <div class="container-fluid nav-pad"></div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand"><img src="img/logo_small.png" alt="" class="rounded comp-logo"></a>
+      <div class="navbar-brand comp-logo-text"><i class="fas fa-hard-hat text-warning pr-2"></i>Pattenden Construction Services</div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,8 +27,9 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#about">About Us</a>
-          <a class="nav-item nav-link" href="#speakers">Projects</a>
-          <a class="nav-item nav-link" href="#schedule">Contact</a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -36,8 +38,8 @@
   <header>
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid main-head">
-    <div class="container text-sm-center text-light pt-1 col-md-8 rounded pb-4 shadow-lg head-content">
-      <h1 class="display-4">Pattenden Construction Services</h1>
+    <div class="container text-sm-center text-light pt-1 col-md-6 rounded pb-4 shadow-lg head-content">
+      <div class="py-2"><img src="img/logo_small.png" alt="" class="rounded comp-logo"></div>
       <p class="lead">Tommy and Billy Pattenden formed Pattenden Construction Services. Together they have a combined experience of nearly 40 years in the construction industry.</p>        
       <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Portfolio</button>
@@ -47,19 +49,25 @@
   </div>
 </header>
 
-<div class="container-fluid about-us-header">
-<div class="jumbotron jumbotron-fluid about-us-header">
-  <div class="container text-white head-content rounded pb-4 shadow-lg">
-    <h1 class="display-4">About Us</h1>
-    <p class="lead">Qualified carpenters, Tommy and Billy forged successful careers in construction before forming Pattenden Construction Services. Together they have a combined experience of nearly 40 years.</p>
-  </div>
-</div>
+
 <!--Profiles-->
 
-<div class="container">
+<div id="about" class="container about-us-header pt-3">
+  <div class="container-fluid">
+      <div class="container text-white head-content rounded pb-4 shadow-lg my-3">
+        <h1 class="display-4">About Us</h1>
+        <p class="lead">Qualified carpenters, Tommy and Billy forged successful careers in construction before forming Pattenden Construction Services. Together they have a combined experience of nearly 40 years.</p>
+        <div class="row">
+          <div class="col">
+          <img class="img-fluid qual-img" src="img/alcamus-logo.jpg" alt="Card image cap">
+          <img class="img-fluid qual-img" src="img/safe-contractor-logo.jpg" alt="Card image cap">
+        </div>
+        </div>
+    </div>
   <div class="row">
-    <div class="card-deck mx-auto">
-      <div class="card mb-3 p-1" style="max-width: 30rem;">
+    <div class="card-deck">
+      <div class="col-md-6">
+      <div class="card mb-3 p-1">
       <img class="card-img-top" src="img/tommy.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Tommy Pattenden</h5>
@@ -76,7 +84,10 @@
       <p class="card-text"><small class="text-muted">Contact Tommy: 07585 774874</small></p>
     </div>
   </div>
-  <div class="card mb-3 p-1" style="max-width: 30rem;">
+</div>
+
+<div class="col-md-6">
+  <div class="card mb-3 p-1">
     <img class="card-img-top" src="img/billy.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Billy Pattenden</h5>
@@ -93,14 +104,19 @@
 </div>
 </div>
 </div>
+</div>
+</div>
 
 <!-- Portfolio-->
-<div class="container my-5">
-  <div>
-  <h1 class="display-3 mt-4">Portfolio</h1>
+<div id="projects" class="container my-5 about-us-header py-3">
+  <div class="container-fluid">
+    <div class="container text-white head-content rounded pb-4 shadow-lg my-3">
+      <h1 class="display-4">Projects</h1>
+      <p class="lead">Expand the sections below to see examples of our work.</p>
   </div>
+
 <div id="accordion">
-  <div class="card bg-info text-white">
+  <div class="card text-white">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -109,7 +125,7 @@
       </h5>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseOne" class="collapse bg-info" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         <p>Crosskeys house requires a full refurbishment. The project took 2 weeks and was valued at £36,000.</p>
         <div class="container">
@@ -131,7 +147,7 @@
         </button>
       </h5>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div id="collapseTwo" class="collapse bg-info" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
@@ -145,7 +161,7 @@
         </button>
       </h5>
     </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+    <div id="collapseThree" class="collapse bg-info" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
@@ -153,38 +169,47 @@
   </div>
 </div>
 </div>
+</div>
 
 <!--Testimonials-->
-<div class="container">
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top testimonial-img" src="img/nhs.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Zoe Porter - Admin Manager</h5>
-      <p class="card-text">Pattenden Construction Services are our go-to contractor for all maintenance and construction work.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+<div id="testimonials" class="container my-5 about-us-header py-3">
+  <div class="container-fluid">
+    <div class="container text-white head-content rounded pb-4 shadow-lg my-3">
+      <h1 class="display-4">Testimonials</h1>
     </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top testimonial-img" src="img/BHCC-Logo-twitter.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Amy Law</h5>
-      <p class="card-text">Pattenden Construction Services deliver quality work, on budget, on time.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top testimonial-img" src="img/alcamus-logo.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Dick Francis</h5>
-      <p class="card-text">I can recommend Billy & Tommy very highly!</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="container">
+    <div class="row">
+      <div class="card col-sm">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>“I have worked with Tommy for over a decade and have always appreciated his dedication and professional attitude he brings to each project”.</p>
+            <footer class="blockquote-footer">Toby Rollestone BSc (Hons) MRICS - Director - MacConvilles Ltd</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="card col-sm">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>“I worked with Mr Pattenden in 2009/2010 constructing a new build community centre. I found Mr Pattenden to be professional, knowledgeable, well organised and generally a pleasure to work with. I hope to work with him again in the future”.</p>
+            <footer class="blockquote-footer">Katherine Hartfield - Building Surveyor - Hamson Partnership Ltd</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="card col-sm">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>“Tommy has always provided a professional and pragmatic service for the delivery of projects we have been collectively involved in”.</p>
+            <footer class="blockquote-footer">Kevin S Smith MRICS - Director - Hamson Partnership Ltd</footer>
+          </blockquote>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid bg-dark text-white">
     <div class="row py-3">
       <div class="col-md-7">
         <ul class="nav">
