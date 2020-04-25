@@ -1,13 +1,27 @@
+h1, p, ul {
+  color: #F1FAEE;
+}
+
+body {
+  background-color: #F1FAEE;
+}
+
+.navbar {
+  background-color: #1D3557;
+
+}
+
 .comp-logo-text {
 font-family: "Roboto Condensed";
 font-size: 1.25rem;;
+border-bottom: .1rem solid #E63946;
 }
 
 .main-head {
     position: relative;
     background-color: #343a40;
-    background: linear-gradient(rgba(63, 136, 197, .75), transparent 90%),
-                linear-gradient(0deg, #fff, transparent),
+    background: linear-gradient(rgba(168, 218, 220, .75), transparent 90%),
+                linear-gradient(0deg, #F1FAEE, transparent),
                 rgba(63, 136, 197, 1) url("img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
@@ -15,17 +29,62 @@ font-size: 1.25rem;;
   }
 
   .head-content {
-      background-color: rgba(7, 56, 95, 0.8);
+      background-color: rgba(29, 53, 87, 0.8);
+      
+  }
+
+  .new-section {
+    border: .1rem solid #9db4c0;
+  padding: 5px;
+  border-radius: 4px;
+  }
+
+  .comp-logo {
+    border: 1px solid #F1FAEE;
+  border-radius: 4px;
+  padding: 5px;
   }
 
   .about-us-header {
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #9db4c0;  /* fallback for old browsers */
   }
+
+
+  .bt-card {
+    background-color: #457B9D;
+  }
+
+  .bt-img {
+    border: 1px solid #F1FAEE;
+  border-radius: 4px;
+  padding: 5px;
+  }
+
 
   .testimonial-img {
     height: 180px;
+  }
+
+  .testi {
+    background-color: #457B9D;
+    padding-top: 20px;;
+  }
+
+  blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    color: #BE2F3A;
+    text-align: center;
+  }
+  .blockquote-footer {
+    color: black;
   }
 
   .port-img {
@@ -39,7 +98,28 @@ font-size: 1.25rem;;
     width: auto;
     margin-right: 1rem;
   }
-  
+
+  .card {
+    height: 100%;
+  }
+
+  .btn-link {
+    color: #F1FAEE;
+    align-content: center;
+  }
+
+  .btn-link:hover {
+    text-decoration: none;
+    color: #1D3557;
+  }
+
+  #accordion .card-header {
+    background-color: #457B9D;
+  }
+
+  .accordion-content {
+    background-color: #455874;
+  }
 
   @media only screen and (max-width: 500px) {
     .comp-logo {
