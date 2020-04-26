@@ -43,6 +43,8 @@ border-bottom: .1rem solid #E63946;
     border: 1px solid #F1FAEE;
   border-radius: 4px;
   padding: 5px;
+  max-width: 100%;
+  height: auto;
   }
 
   .about-us-header {
@@ -73,18 +75,18 @@ border-bottom: .1rem solid #E63946;
   blockquote:before {
     content: '\201C';
     position: absolute;
-    top: 0em;
+    top: .1em;
     left: 50%;
     transform: translate(-50%, -50%);
     background: transparent;
     width: 3rem;
     height: 2rem;
     font: 6em/1.08em 'PT Sans', sans-serif;
-    color: #BE2F3A;
+    color: #1D3557;
     text-align: center;
   }
   .blockquote-footer {
-    color: black;
+    color: #1D3557;
   }
 
   .port-img {
@@ -125,4 +127,19 @@ border-bottom: .1rem solid #E63946;
     .testi-head {
       font-size: 2.5rem;
     }
+
+    .my-quote {
+      font-size: .5rem;
+    }
 }
+
+/* Experimental Testimonials Section */
+.testi-carousel, .testi-container {
+  height: 400px;
+  background-color: #457B9D;
+}
+
+.testi-container {
+  padding: 50px 70px;
+}
+

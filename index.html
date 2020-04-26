@@ -38,8 +38,8 @@
   <header>
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid main-head">
-    <div class="container text-sm-center text-light pt-1 col-md-6 rounded pb-4 shadow-lg head-content">
-      <div class="py-2"><img src="img/logo_small.png" alt="" class="rounded comp-logo"></div>
+    <div class="container text-center text-light pt-1 col-md-6 rounded pb-4 shadow-lg head-content">
+      <div class="py-2"><img src="img/logo_small.png" alt="" class="rounded comp-logo img-fluid"></div>
       <p class="lead px-3">Tommy and Billy Pattenden formed Pattenden Construction Services. Together they have a combined experience of nearly 40 years in the construction industry.</p>        
       <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
         <a class="btn btn-primary btn-lg" href="#about">About Us</a>
@@ -176,49 +176,63 @@
     <div class="container-fluid text-white head-content rounded pb-4 shadow-lg my-3">
       <h1 class="section-head display-3 testi-head">Testimonials</h1>
     </div>
-  <div class="container">
-    <div class="row">
-      <div class="card-deck">
-      <div class="card col-sm testi mr-2">
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>I have worked with Tommy for over a decade and have always appreciated his dedication and professional attitude he brings to each project</p>
-            <footer class="blockquote-footer">Toby Rollestone BSc (Hons) MRICS - Director - MacConvilles Ltd</footer>
-          </blockquote>
-        </div>
+  </div>
+  <div class="row">
+  <div class="container-fluid col-md-6 testi-carousel rounded">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="testi-container">
+      <blockquote class="blockquote">
+        <p>I have worked with Tommy for over a decade and have always appreciated his dedication and professional attitude he brings to each project.</p>
+        <footer class="blockquote-footer">Toby Rollestone BSc (Hons) MRICS - Director - MacConvilles Ltd</footer>
+      </blockquote>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="testi-container">
+        <blockquote class="blockquote testimonial-quote">
+          <p>Billy is a very friendly, hard working man. Honest and polite throughout all our jobs, we have used him several times.</p>
+          <footer class="blockquote-footer">Clive Copsey - Baymead</footer>
+        </blockquote>
       </div>
-      <div class="card col-sm testi mr-2">
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>I worked with Mr Pattenden in 2009/2010 constructing a new build community centre. I found Mr Pattenden to be professional, knowledgeable, well organised and generally a pleasure to work with. I hope to work with him again in the future</p>
-            <footer class="blockquote-footer">Katherine Hartfield - Building Surveyor - Hamson Partnership Ltd</footer>
-          </blockquote>
-        </div>
-      </div>
-      <div class="card col-sm testi">
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>Tommy has always provided a professional and pragmatic service for the delivery of projects we have been collectively involved in</p>
-            <footer class="blockquote-footer">Kevin S Smith MRICS - Director - Hamson Partnership Ltd</footer>
-          </blockquote>
-        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="testi-container">
+        <blockquote class="blockquote">
+          <p>Tommy has always provided a professional and pragmatic service for the delivery of projects we have been collectively involved in.</p>
+          <footer class="blockquote-footer">Kevin S Smith MRICS - Director - Hamson Partnership Ltd</footer>
+        </blockquote>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+  </div>
 </div>
 </div>
 
+
+<!--Footer-->
   <div class="container-fluid bg-dark text-white">
     <div class="row py-3">
       <div class="col-md-7">
-        <ul class="nav">
-          <li>Contact stuff</li>
-          <li>Address stuff</li>
-        </ul>
+        <small>&copy; 2020 Pattenden Construction Services Ltd</small>
       </div>
       <div class="col-md text-md-right">
-        <small>&copy; 2020 Pattenden Construction Services Ltd</small>
+        <small>Website By R.Malyon</small>
       </div>
     </div>
   </div>
