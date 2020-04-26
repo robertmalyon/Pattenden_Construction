@@ -19,10 +19,9 @@ border-bottom: .1rem solid #E63946;
 
 .main-head {
     position: relative;
-    background-color: #343a40;
-    background: linear-gradient(rgba(168, 218, 220, .75), transparent 90%),
+    background: linear-gradient(rgba(174, 198, 207, .75), transparent 90%),
                 linear-gradient(0deg, #F1FAEE, transparent),
-                rgba(63, 136, 197, 1) url("img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
+                rgba(174, 198, 207, 1) url("img/abstract-antique-backdrop-background-164005.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -48,7 +47,7 @@ border-bottom: .1rem solid #E63946;
   }
 
   .about-us-header {
-    background: #9db4c0;  /* fallback for old browsers */
+    background: #AEC6CF;  /* fallback for old browsers */
   }
 
 
@@ -123,17 +122,7 @@ border-bottom: .1rem solid #E63946;
     background-color: #455874;
   }
 
-  @media only screen and (max-width: 500px) {
-    .testi-head {
-      font-size: 2.5rem;
-    }
-
-    .my-quote {
-      font-size: .5rem;
-    }
-}
-
-/* Experimental Testimonials Section */
+  /* Experimental Testimonials Section */
 .testi-carousel, .testi-container {
   height: 400px;
   background-color: #457B9D;
@@ -142,4 +131,21 @@ border-bottom: .1rem solid #E63946;
 .testi-container {
   padding: 50px 70px;
 }
+
+  @media only screen and (max-width: 500px) {
+    .testi-head {
+      font-size: 2.5rem;
+    }
+
+    .testi-carousel, .testi-container {
+      height: 500px;
+      background-color: #457B9D;
+    }
+
+    .testi-container {
+      padding: 50px 50px;
+    }
+}
+
+
 
