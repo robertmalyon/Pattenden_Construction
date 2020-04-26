@@ -2,6 +2,10 @@ h1, p, ul {
   color: #F1FAEE;
 }
 
+.scroll-correct {
+  height: 75px;
+}
+
 body {
   background-color: #F1FAEE;
 }
