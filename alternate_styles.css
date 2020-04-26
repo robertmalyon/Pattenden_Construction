@@ -142,12 +142,16 @@ border-bottom: .1rem solid #E63946;
     }
 
     .testi-carousel, .testi-container {
-      height: 600px;
+      height: 500px;
       background-color: #457B9D;
     }
 
     .testi-container {
       padding: 50px 50px;
+    }
+
+    .scroll-correct {
+      height: 150px;
     }
 }
 
